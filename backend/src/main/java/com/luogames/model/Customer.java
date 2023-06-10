@@ -53,7 +53,7 @@ public class Customer implements Serializable {
     // Associations ----------------------------------------------------------------------------
     @ManyToMany(mappedBy = "customers")
     @ToString.Exclude
-    private List<Category> categoriesInterested;
+    private List<Category> categoriesInterested = new ArrayList<>();
 
     @OneToMany(mappedBy = "customer")
     @ToString.Exclude

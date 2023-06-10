@@ -57,7 +57,7 @@ public class Creator implements Serializable {
     @ToString.Exclude
     private List<Game> games = new ArrayList<>();
 
-    @ManyToMany(mappedBy = "creatorsFollowing")
+    @ManyToMany
     private List<Customer> followers = new ArrayList<>();
 
     @OneToMany(mappedBy = "creator")

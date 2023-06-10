@@ -20,7 +20,7 @@ public class GameCustomer implements Serializable {
     private Integer gameCustomerId;
 
     @Column(nullable = false)
-    @Type(type = "YES_NO")
+    @Type(type = "yes_no")
     @NonNull
     private Boolean offerBought;
 

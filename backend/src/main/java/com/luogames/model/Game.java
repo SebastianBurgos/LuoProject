@@ -69,11 +69,11 @@ public class Game implements Serializable {
     @ToString.Exclude
     private List<Purchase> purchases = new ArrayList<>();
 
-    @ManyToMany(mappedBy = "wishList")
+    @ManyToMany
     @ToString.Exclude
     private List<Customer> potentialCustomers = new ArrayList<>();
 
-    @ManyToMany(mappedBy = "games")
+    @ManyToMany
     @ToString.Exclude
     private List<Offer> offers = new ArrayList<>();
 

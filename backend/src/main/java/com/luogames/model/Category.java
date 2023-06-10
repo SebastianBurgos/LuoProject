@@ -25,11 +25,11 @@ public class Category implements Serializable {
     private String name;
 
     // Association ------------------------------------------------------------------------------
-    @ManyToMany(mappedBy = "categories")
+    @ManyToMany
     @ToString.Exclude
     private List<Game> games = new ArrayList<>();
 
-    @ManyToMany(mappedBy = "categoriesInterested")
+    @ManyToMany
     @ToString.Exclude
-    private List<Customer> customers;
+    private List<Customer> customers = new ArrayList<>();
 }
